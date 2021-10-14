@@ -12,14 +12,12 @@ fetch("https://ghibliapi.herokuapp.com/films")
         }
 
         let movieForm = document.querySelector("form#movie-selector");
+        let movieTitle = document.querySelector("#movie-title");
+        let movieYear = document.querySelector("#movie-year");
+        let movieSummary = document.querySelector("#movie-summary");
         movieForm.addEventListener("change", (e) => {
             e.preventDefault();
-            let movieTitle = document.querySelector("#movie-title");
-            let movieYear = document.querySelector("#movie-year");
-            let movieSummary = document.querySelector("#movie-summary");
-
             movieTitle.textContent = e.target.value;
-
             for(let studio of data){
                 if(e.target.value === studio.title){
                     movieYear.textContent = studio.release_date;
@@ -28,23 +26,23 @@ fetch("https://ghibliapi.herokuapp.com/films")
             }  
         })
 
-        let textInput = document.querySelector("#user-review");
-        textInput.addEventListener("input", (e) => {
-            textInput.textContent = e.target.value;
-        });
-
         let reviewForm = document.querySelector("#movie-review");
         reviewForm.addEventListener("submit", (e) => {
             e.preventDefault();
+            let textInput = document.querySelector("#user-review");
             let ul = document.querySelector("ul");
             let li = document.createElement("li");
             let strong = document.createElement("strong");
+
+            textInput.textContent = e.target.value;
             strong.textContent = `${movieTitle.textContent}: `;
             li.textContent = `${textInput.value}`;
+
             ul.append(li);
             li.prepend(strong);
+
             textInput.value = ""; 
-        })
+        });
     })
     .catch((err) => {
         console.log(err);
