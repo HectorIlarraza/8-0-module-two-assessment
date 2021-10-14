@@ -40,8 +40,8 @@ fetch("https://ghibliapi.herokuapp.com/films")
                 let strong = document.createElement("strong");
                 strong.textContent = `${movieTitle.textContent}: `;
                 li.textContent = `${textInput.value}`;
-                li.prepend(strong);
                 ul.append(li);
+                li.prepend(strong);
                 textInput.value = ""; 
             })
         })
