@@ -6,6 +6,8 @@ main{
     ". selector ."
     ". display ."
     ". review .";
+    width: 75vw;
+    margin: 0 auto;
 }
 
 body{
@@ -15,16 +17,24 @@ body{
 
 header{
     grid-area: header;
+    display: grid;
+    grid-template-areas: 
+    "logo h1 ."
+    "logo . .";
     background-color: skyblue;
-    max-width: 75%;
+    height: 200px;
+    width: 75vw;
+    margin: 0 auto;
 }
 
 header h1{
+    grid-area: h1;
     text-align: right;
 }
 
-header img{
-    height: 233px;
+.ghibli{
+    grid-area: logo;
+    height: 200px;
 }
 
 #selector{

@@ -25,25 +25,25 @@ fetch("https://ghibliapi.herokuapp.com/films")
                     movieYear.textContent = studio.release_date;
                     movieSummary.textContent = studio.description;
                 }   
-            }
-            
-            let textInput = document.querySelector("#user-review");
-            textInput.addEventListener("input", (e) => {
-                textInput.textContent = e.target.value;
-            });
+            }  
+        })
 
-            let reviewForm = document.querySelector("#movie-review");
-            reviewForm.addEventListener("submit", (e) => {
-                e.preventDefault();
-                let ul = document.querySelector("ul");
-                let li = document.createElement("li");
-                let strong = document.createElement("strong");
-                strong.textContent = `${movieTitle.textContent}: `;
-                li.textContent = `${textInput.value}`;
-                ul.append(li);
-                li.prepend(strong);
-                textInput.value = ""; 
-            })
+        let textInput = document.querySelector("#user-review");
+        textInput.addEventListener("input", (e) => {
+            textInput.textContent = e.target.value;
+        });
+
+        let reviewForm = document.querySelector("#movie-review");
+        reviewForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            let ul = document.querySelector("ul");
+            let li = document.createElement("li");
+            let strong = document.createElement("strong");
+            strong.textContent = `${movieTitle.textContent}: `;
+            li.textContent = `${textInput.value}`;
+            ul.append(li);
+            li.prepend(strong);
+            textInput.value = ""; 
         })
     })
     .catch((err) => {
