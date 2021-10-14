@@ -1,0 +1,44 @@
+
+main{
+    display: grid;
+    grid-template-areas: 
+    ". header ."
+    ". selector ."
+    ". display ."
+    ". review .";
+}
+
+body{
+    background-color: lavender;
+    font-family: monospace;
+}
+
+header{
+    grid-area: header;
+    background-color: skyblue;
+    /* max-width: 75%; */
+}
+
+header h1{
+    text-align: right;
+}
+
+header img{
+    height: 233px;
+}
+
+#selector{
+    grid-area: selector;
+}
+
+#movie-selector{
+    padding: 25px;
+}
+
+#display-info{
+grid-area: display;
+}
+
+#review{
+    grid-area: review;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod 2 Assessment Test</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Ghibli Review App</h1>
+            <img class="Ghibli" src="./images/ghibli-logo.png" alt="Image of Studio ghibli-logo" />
+        </header>
+        <section id="selector">
+            <form id="movie-selector">
+                <div id="error-message"></div>
+                <label for="">
+                    <select id="movie-select" name="movie-select"></select>
+                </label>
+            </form>
+        </section>
+        <section id="display-info">
+            <h3 id="movie-title"></h3>
+            <p id="movie-year"></p>
+            <p id="movie-summary"></p>
+        </section>
+        <section id="review">
+            <form id="movie-review">
+                <label for="">
+                    Your Review
+                    <input type="text" name="user-review" id="user-review" />
+                </label>
+                <input type="submit" name="submit" value="   Submit Review   " />
+            </form>
+            <ul></ul>
+        </section>
+    </main>
+</body>
+</html>
