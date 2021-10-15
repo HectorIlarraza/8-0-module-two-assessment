@@ -32,12 +32,12 @@ This will open the Cypress testing window, where you can click to run an individ
 
 To submit the assessment, you should do the following:
 
-- [ ] Create a pull request against the original repository.
+- [x] Create a pull request against the original repository.
 - In your pull request description, add screenshots of the following:
-  - [ ] Your landing page, when a user first arrives.
-  - [ ] Your landing page, after choosing a dropdown menu.
-  - [ ] Your landing page, after submitting two reviews.
-- [ ] Submit a link to your pull request on Canvas.
+  - [x] Your landing page, when a user first arrives.
+  - [x] Your landing page, after choosing a dropdown menu.
+  - [x] Your landing page, after submitting two reviews.
+- [x] Submit a link to your pull request on Canvas.
 
 ## Assessment Details
 
@@ -71,29 +71,29 @@ The page should fit the following requirements:
 
 - When landing on the page, the user should see:
 
-  - [ ] The header, which includes the studio logo and a top-level heading (i.e. `h1`), with the name of the application.
-  - [ ] A dropdown that contains all Studio Ghibli movie titles, in the order they are received from the API.
-  - [ ] A blank `section` after the dropdown, which has an ID of `display-info`. More information will be displayed here, later on.
-  - [ ] A text input where the user, can enter review text, inside of a form and accompanied by a `submit` button.
-  - [ ] An empty `ul` after the form. More information will be displayed here, later on.
+  - [x] The header, which includes the studio logo and a top-level heading (i.e. `h1`), with the name of the application.
+  - [x] A dropdown that contains all Studio Ghibli movie titles, in the order they are received from the API.
+  - [x] A blank `section` after the dropdown, which has an ID of `display-info`. More information will be displayed here, later on.
+  - [x] A text input where the user, can enter review text, inside of a form and accompanied by a `submit` button.
+  - [x] An empty `ul` after the form. More information will be displayed here, later on.
 
 - When selecting one of the options from the dropdown list, the user should see:
 
-  - [ ] An `h3` with the movie's title appear in the `display-info` section of the page.
-  - [ ] A `p` with the movie's release year.
-  - [ ] A `p` with the description of the movie.
+  - [x] An `h3` with the movie's title appear in the `display-info` section of the page.
+  - [x] A `p` with the movie's release year.
+  - [x] A `p` with the description of the movie.
 
   This content should change each time the user choose a new option in the dropdown list.
   ![Page view when a dropdown option is selected](./images/readme/show.png)
 
 - When the user enters their review into the text input and presses the "Submit Review" button, they should see:
 
-  - [ ] The review, inside of an `li`, with the name of the movie in a `strong` element and the text of the review afterwards.
-  - [ ] The review text should be cleared from the text input.
+  - [x] The review, inside of an `li`, with the name of the movie in a `strong` element and the text of the review afterwards.
+  - [x] The review text should be cleared from the text input.
 
   ![Page after the review has been submitted.](./images/readme/submit-review.png)
 
-- [ ] If the user selects a different dropdown option after making the review, all of the reviews should stay where they are.
+- [x] If the user selects a different dropdown option after making the review, all of the reviews should stay where they are.
       ![Page after multiple reviews have been submitted.](./images/readme/multi-review.png)
 
 ### Commit history

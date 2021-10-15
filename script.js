@@ -19,7 +19,7 @@ fetch("https://ghibliapi.herokuapp.com/films")
             e.preventDefault();
             movieTitle.textContent = e.target.value;
             for(let studio of data){
-                if(e.target.value === studio.title){
+                if(movieTitle.textContent === studio.title){
                     movieYear.textContent = studio.release_date;
                     movieSummary.textContent = studio.description;
                 }   
